@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h2>itProger</h2>
+        </div>
+        <div class="links">
+            <span><a href="#" class="active">Home</a></span>
+            <span><a href="#">Contact</a></span>
+            <span><a href="#">About us</a></span>
+        </div>
+    </div>
+    <div class="main_body">
+            <h1>Home page</h1>
+            <div class="main_info">
+                <p class="lead">User name: {{.Name}} </p>
+                <p class="lead">Age: {{.Age}} </p>
+                <p class="lead">Money: {{.Money}} </p>
+            </div>
+            <div class="condition">
+                {{if lt .Age 20}}
+                <p class="lead">So hello</p>
+                {{else}}
+                <p class="lead">And who are you?</p>
+                {{end}}
+            </div>
+            <div class="range">
+                {{range .Hobbies}}
+                <p class="lead"><b> {{.}} </b></p>
+                {{else}}
+                <p class="lead"><b> We don't have result </b></p>
+                {{end}}
+            </div>
+            <a href="#" class="main_btn">To know more</a>   
+    </div>
+</body>
+</html>

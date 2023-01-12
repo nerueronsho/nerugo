@@ -1,0 +1,27 @@
+{{ define "index" }}
+
+{{ template "header"}}
+    <div class="main_body">
+        <h1>Home page</h1>
+        <div class="cool-text">
+            <p class="articles">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ad numquam. Itaque praesentium perferendis nobis, tempora error dicta cupiditate laudantium provident asperiores sint possimus sapiente, doloribus maxime perspiciatis, modi dolorem.
+            </p>
+            <div class="cool-articles">
+                <p class="articles">
+                    {{ range . }}
+                    <h2>{{ .Title }}</h2>
+                    <p class="articles">
+                    {{ .Anons }}
+                    </p>
+                    <a href="/post/{{ .Id }}" class="read-btn">To know more</a>
+                    {{  else }}
+                        Here is not articles 
+                    {{ end }}
+                </p>
+            </div>
+        </div>
+        <a href="#" class="main_btn">To know more</a>  
+    </div> 
+{{ template "footer" }}
+{{ end }}

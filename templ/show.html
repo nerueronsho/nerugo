@@ -1,0 +1,14 @@
+{{ define "show" }}
+
+{{ template "header"}}
+    <div class="main_body">
+        <h1> {{ .Title }}</h1>
+        <div class="cool-text">
+            <p class="articles"> 
+                {{ .FullText }}
+            </p>
+        </div>
+        <a href="/" class="main_btn">GO back</a>  
+    </div> 
+{{ template "footer" }}
+{{ end }}

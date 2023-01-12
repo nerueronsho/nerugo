@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: #2B2B2B;
+   color: #fff;
+   font-family: "Poppins", sans-serif;
+}
+/* -----------------General links--------------------- */
+.links span .active{
+    color: #fff;
+    border-color: #fff;
+    border-bottom: 3px solid;
+    padding-bottom: 3px;
+}
+
+/* ---------------------------------------------------------- */
+.header{
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    margin-right: 150px;
+}
+.logo h2{
+    font-size: 26px;
+}
+.links{
+    margin-right: 60px;
+    display: flex;
+}
+.links span{
+    margin-right: 42px;
+}
+.links span a{
+    text-decoration: none;
+    color: rgba(192, 192, 192, 0.856);
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 3px;
+}
+.links span a:hover{
+    color: #fff;
+    border-color: #fff;
+    transition: 500ms ease-in;
+}
+.main_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.main_body h1{
+    font-size: 40px;
+}
+.main_body .cool-text{
+    width: 500px;
+}
+.articles {
+    margin-bottom:15px;
+}
+
+.articles a{
+    display:inline-block;
+}
+.cool-text{
+    padding: 10px 15px;
+    text-align: center;
+}
+.cool-text>p{
+    color: #fff;
+}
+.cool-articles{
+    background-color: #F6CCD7;
+    margin-top: 15px;
+    padding-bottom: 25px;
+}
+.cool-articles h2, p{
+    color: #581023;
+}
+.cool-articles h2{
+    margin-top: 25px;
+}
+.main_btn{
+    border: none;
+    text-decoration: none;
+    color: #2B2B2B;
+    background-color: #fff;
+    margin-top: 25px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.main_btn:hover{
+    background-color:#C1193D;
+    color: #fff;
+    transition: 500ms ease;
+
+}
+.read-btn{
+    border: none;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #C1193D;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.read-btn:hover{
+    background-color: #fff;
+    color: #C1193D;
+    transition: 500ms ease;
+}
+/* --------------------Footer-------------------- */
+.footer{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main-text-footer p{
+    color: #dbcfcf;
+}
+.main-text-footer p span{
+    color: #fff;
+    font-weight: bolder;
+}
+.art-view{
+    text-decoration: none;
+    font-size: 14px;
+    color: #dbcfcf;
+}
+.art-view:hover{
+    color: #ffffff;
+    transition: 500ms ease;
+}
